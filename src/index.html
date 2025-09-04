@@ -1,18 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MP 0</title>
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Hello World!</h1>
-  <img src="assets/image.jpg" />
+  <section class="card" id="profileCard">
+    <img src="assets/Vanshika.jpg" alt="Profile picture" id="profileImg">
 
-  <script src="bundle.js" type="text/javascript"></script>
+    <h1 id="name">Vanshika Jain</h1>
+
+    <p class="email"><a href="mailto:vj19@illinois.edu">vj19@illinois.edu</a></p>
+    <p class="link"><a href="https://github.com/Vanshika-30" target="_blank" rel="noopener">GitHub</a></p>
+
+    <div id="bio" class="bio" style="display: none;">
+      <p class="bio">
+        I am a Master’s student in Computer Science at the University of Illinois, Urbana–Champaign, specializing in Computer Security, Operating Systems, and Database Systems.
+      </p>
+      <p class="bio">
+        I recently completed my internship at Amazon Robotics, where I designed and built a scalable GenAI-powered chatbot integrated with AWS services to improve incident response. Previously, I worked as a Software Development Engineer at Goldman Sachs on cloud migration, reliability engineering, and API security. I enjoy building secure, data-driven solutions that enhance performance, reliability, and user experience.
+      </p>
+    </div>
+
+  <!-- Color buttons -->
+  <div class="color-options">
+    <button id="redBtn">Red</button>
+    <button id="blueBtn">Blue</button>
+    <button id="greenBtn">Green</button>
+  </div>
+</section>
+
+<script src="bundle.js" type="text/javascript"></script>
 </body>
-
 </html>
